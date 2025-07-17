@@ -1,13 +1,11 @@
 const listBtn=document.getElementById('listBtn');
 const list=document.getElementById('list');
-const doTitle=document.getElementById('doTitle')
-const doBody=document.getElementById('doBody');
-const capital=document.querySelectorAll('dt');
+const doTitle=document.querySelectorAll('dt');
 
 
 
 
-capital.forEach(item => {
+doTitle.forEach(item => {
     item.addEventListener('click', () => {
         item.nextElementSibling.classList.toggle('hidden');
     });
@@ -20,8 +18,8 @@ listBtn.addEventListener('click',() => {
     list.classList.toggle('hidden'); 
 })
 
-// for (let i=0; i < capital.length; i++){
-//     capital[i].classList.add('uppercase');
+// for (let i=0; i < doTitle.length; i++){
+//     doTitle[i].classList.add('uppercase');
 // }
 
 
