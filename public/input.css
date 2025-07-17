@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100...');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --yellow: #eab308;
+    --blue: #5312e0;
+    --orange: #ea8408;
+    --green: #034415;
+    --white: #f9fcf9;
+    --red: #e30c0c;
+    
+
+  }
+
+  body {
+    @apply text-base font-lato bg-white text-black leading-6;
+  }
+
+
+}
+
+
+@layer components{
+  .cmn-ttl{
+    @apply text-5xl text-black text-center after:content-[''] after:w-15  after:h-1 after:bg-orange after:absolute after:bottom-0 after:left-1/2;
+  }
+
+  .cmn-ttl span{
+     @apply text-yellow;
+  }
+
+  .card{
+    @apply text-orange
+  }
+
+}
