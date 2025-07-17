@@ -12,6 +12,9 @@
     --green: #034415;
     --white: #f9fcf9;
     --red: #e30c0c;
+    --violet: #8e1ba8;
+    --gray: #b7bec1;
+    --black:#080808;
     
 
   }
@@ -25,8 +28,14 @@
 
 
 @layer components{
+  section{
+    @apply py-12;
+  }
+  section:nth-child(even){
+    @apply bg-gray;
+  }
   .cmn-ttl{
-    @apply text-5xl text-black text-center after:content-[''] after:w-15  after:h-1 after:bg-orange after:absolute after:bottom-0 after:left-1/2;
+    @apply text-3xl text-black text-center after:content-[''] after:w-20  after:h-1 after:bg-orange after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 mb-5 ;
   }
 
   .cmn-ttl span{

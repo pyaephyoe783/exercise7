@@ -17,6 +17,10 @@ module.exports = {
         white: 'var(--white)',
         black: 'var(--black)',
         red: 'var(--red)',
+        violet: 'var(--violet)',
+        gray:'var(--gray)',
+        black:'var(--black)'
+        
       },
 
 
@@ -28,8 +32,9 @@ module.exports = {
       md: '960px',              
     },
       spacing:{
-        '15': '50px',
-        '0.5':'2px'
+        '20': '100px',
+        '0.5':'2px',
+        '10':'500px'
         
       },
     },
